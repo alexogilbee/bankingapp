@@ -1,0 +1,37 @@
+DATABASE:
+
+TABLE: USERS
+username(SEMI-KEY)
+password
+email address
+first name
+last name
+phone number?
+account number (KEY)
+
+CREATE TABLE users (uID INT, username VARCHAR(20), password VARCHAR(20),
+uFirstName VARCHAR(20), uLastName VARCHAR(20), uEmail VARCHAR(30), uPhone VARCHAR(12));
+
+TABLE: ACCOUNTS
+USER IT GOES TO (APPEND)
+account number (KEY)
+account name
+account type CS
+balance
+
+CREATE TABLE accounts (aID INT, aName VARCHAR(20), aType VARCHAR(20), balance DOUBLE)
+
+TABLE: TRANSACTIONS
+transaction id (KEY)
+sender username (nah)
+sender account number
+receiver username (nah)
+receiver account number
+amount
+date sent
+memo
+
+create table transactions (tID INT, sID INT, rID INT, amount DOUBLE, timestamp DATE, memo VARCHAR(100));
+
+i mean this seems like everything you need
+probably
